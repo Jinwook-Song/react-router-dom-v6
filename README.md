@@ -10,7 +10,7 @@
 `npm i react-router-dom@6.4`
 
 - [x] BrowserRouter
-- [ ] CreateBrowserRouter
+- [x] CreateBrowserRouter
 - [ ] Route
   - [ ] errorElement
 - [ ] useNavigate
@@ -20,3 +20,28 @@
 - [ ] useSearchParams
 
 ---
+
+## createBrowserRouter
+
+[docs](https://reactrouter.com/en/main/routers/create-browser-router#createbrowserrouter)
+
+모든 React Router 웹 프로젝트에 권장되는 라우터입니다.
+
+DOM History API를 사용하여 URL을 업데이트하고 기록 스택을 관리합니다.
+
+```tsx
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    loader: rootLoader,
+    children: [
+      {
+        path: 'team',
+        element: <Team />,
+        loader: teamLoader,
+      },
+    ],
+  },
+]);
+```
