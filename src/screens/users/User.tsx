@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, Outlet, useParams } from 'react-router-dom';
 import { users } from '../../db';
 import NotFound from '../NotFound';
 
@@ -6,7 +6,15 @@ function User() {
   const params = useParams();
   const user = users.find((user) => user.id === Number(params.userId));
 
-  if (user) return <h1>User: {user.name}</h1>;
+  if (user)
+    return (
+      <div>
+        <h1>User: {user.name}</h1>
+        <hr />
+        <Link to={'followers'}>See followers</Link>
+        <Outlet />
+      </div>
+    );
 
   return <NotFound />;
 }
