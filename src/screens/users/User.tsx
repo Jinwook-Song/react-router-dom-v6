@@ -12,7 +12,7 @@ function User() {
         <h1>User: {user.name}</h1>
         <hr />
         <Link to={'followers'}>See followers</Link>
-        <Outlet />
+        <Outlet context={user} />
       </div>
     );
 

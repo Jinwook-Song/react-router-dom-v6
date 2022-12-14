@@ -5,7 +5,7 @@ function Root() {
   return (
     <div className='container'>
       <Header />
-      <Outlet />
+      <Outlet context={{ darkMode: true }} />
     </div>
   );
 }
