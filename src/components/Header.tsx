@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navigate = useNavigate();
+  function onAboutClick() {
+    navigate('/about');
+  }
   return (
     <div className='container'>
       <nav>
@@ -9,7 +13,13 @@ function Header() {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/about'>About</Link>
+            <span
+              style={{ cursor: 'pointer' }}
+              role={'link'}
+              onClick={onAboutClick}
+            >
+              About
+            </span>
           </li>
         </ul>
       </nav>
