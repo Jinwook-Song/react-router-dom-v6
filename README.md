@@ -1,6 +1,6 @@
 # React Router Dom V6
 
-| 프로젝트 기간 | 22.12.13 ~          |
+| 프로젝트 기간 | 22.12.13 ~ 22.12.14 |
 | ------------- | ------------------- |
 | 프로젝트 목적 | React router dom v6 |
 | Github        | ‣                   |
@@ -11,13 +11,13 @@
 
 - [x] BrowserRouter
 - [x] CreateBrowserRouter
-- [ ] Route
-  - [ ] errorElement
-- [ ] useNavigate
-- [ ] useParams
-- [ ] Outlet
-- [ ] useOutletContext
-- [ ] useSearchParams
+- [x] Route
+  - [x] errorElement
+- [x] useNavigate
+- [x] useParams
+- [x] Outlet
+- [x] useOutletContext
+- [x] useSearchParams
 
 ---
 
